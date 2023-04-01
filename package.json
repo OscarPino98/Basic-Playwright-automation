@@ -1,0 +1,24 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "this is a basic project to practice my Playwright Javascript skills.",
+  "main": "index.js",
+  "dependencies": {
+    "playwright-core": "^1.32.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarPino98/Basic-Playwright-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OscarPino98/Basic-Playwright-automation/issues"
+  },
+  "homepage": "https://github.com/OscarPino98/Basic-Playwright-automation#readme"
+}
