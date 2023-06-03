@@ -2,4 +2,4 @@
 
 
 
-this is a basic project to practice my Playwright Javascript skills.
+This is a basic project to practice my Playwright Javascript skills.
