@@ -1,19 +1,19 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
+const {PomManager} = require('../Pom/PomManager.js');
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+const dataset = require("../Utils/Data.json");
+for(const data of dataset)
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
+test.only('Nuevotest', async ({ page }) => {
+    
+const poManager = new PomManager(page);
+const loginpage = poManager.getLoginPage();
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+await loginpage.goTo();
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+await loginpage.dologin(data.usernameStandar, data.password);
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*intro/);
+await page.waitForTimeout(3000);
+
 });
